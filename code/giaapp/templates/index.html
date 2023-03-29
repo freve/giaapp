@@ -1,0 +1,368 @@
+{# Load the tag library #}
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Grupo de investigación GIA ©</title>
+  <meta name="description" content="Grupo de Investigación en Inteligencia 
+  artificial, Artificial intelligence research team, transformación digital 
+  inteligente">
+  <meta name="keywords" content="Artificial intelligence, 
+  Grupo de investigación, inteligencia artificial, transformación digital">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/Gia_25.jpg' %}" rel="icon">
+  <link href="{% static 'assets/img/Gia_25.jpg' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Company - v4.8.0
+  * Template URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1c4dc02966.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+    <h1 class="logo me-auto"><a href="<% url 'index.html' %"><img src="{% static 'img/Gia_80.jpg'%}" class="rounded-circle logo img-fluid" ></a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>          
+        <li><a href="{% url 'servicios' %}"><i class="fa-solid fa-handshake"></i> &nbsp; Servicios</a></li>          
+        <li><a href="{% url 'proyectos' %}"><i class="fa-solid fa-diagram-project">&nbsp;</i> Proyectos</a></li>
+        <li><a href="{% url 'team' %}"><i class="fa-solid fa-people-group"></i>&nbsp; Investigadores</a></li>          
+        <li><a href="{% url 'semilleros' %}"><i class="fa-solid fa-hands-holding-child"></i>&nbsp; Semilleros</a></li>
+        <li><a href="{% url 'contacto' %}"><i class="fa-solid fa-map-location-dot"></i>&nbsp; Contacto</a></li>
+        <li><a href="{% url 'about' %}"><i class="fa-solid fa-circle-info"></i>&nbsp; Acerca de GIA</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+    <div class="header-social-links d-flex">
+        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+    </div>
+
+    </div>
+</header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <br>  
+  <br>
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.gif' %});  background-size: 100% 100%;">
+          <div class="carousel-container">
+            <!--
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Grupo de Investigación <span>GIA</span></h2>
+              <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+            </div>
+            -->
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.gif' %});  background-size: 100% 100%;">
+          <div class="carousel-container">
+            <!--
+              <div class="carousel-content animate__animated animate__fadeInUp">
+                <h2> </h2>
+                <p>Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              
+              </div>
+            -->
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-3.jpg' %});  background-size: 100% 100%;">
+          <div class="carousel-container">
+            
+            <div class="carousel-content animate__animated animate__fadeInUp">
+              <h2>Transformación digital en las organizaciones</h2>
+              <p>La integración de la inteligencia artificial permite a las empresas automatizar tareas, aumentar la 
+                eficiencia, mejorar la toma de decisiones y obtener nuevos conocimientos a partir de los datos. </p>
+              <!-- <div class="text-center"><a href="" class="btn-get-started">Read More</a></div> -->
+            </div>            
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <center>
+              <img src="{% static 'img/GIA_150.jpg' %}" class="img-fluid" alt="">
+            </center>
+            <!-- <h2>Grupo de investigación GIA - UFPS</h2> -->
+            <h3>Buscamos generar nuevas herramientas y proyectos en el campo de la Inteligencia Artificial
+              para impulsar el desarrollo tecnológico de nuestra sociedad.</h3>
+              
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <p>
+              La inteligencia artificial es una de las áreas de la ciencia de la computación que va trasformar el mundo de hoy y del 
+              futuro, muchas herramientas están siendo creadas y usadas para solucionar problemas en todas las áreas del conocimiento, 
+              se utilizan para procesar grandes cantidades de datos y de información para apoyar la toma de desiciones. 
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Algoritmos de reconocimiento de imagenes, reconocimiento de patrones, aprendizaje automático.</li>
+              <li><i class="ri-check-double-line"></i> La robótica, la programación genética y evolutiva, algoritmos de clasificación y segmentación.</li>
+              <li><i class="ri-check-double-line"></i> Procesamiento de lenguaje natural, reconocimiento de gestos y emociones.</li>
+            </ul>
+            <p class="fst-italic">
+              Estas herramientas hacen parte de las tecnologías de la Industria 4.0 usadas para la trasformación digital de las organizaciones.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Services Section =======  NOTICIAS --> 
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Noticias de GIA</h2>
+        </div>
+
+        <div class="row">
+
+          {% if listaNoticias %}
+                {% for noticia in listaNoticias %}
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">                            
+              <img src="{% static 'img/'%}{{noticia.imagen}}" class="img-fluid" alt="">
+              <h4><a href="{{ noticia.pagina_detalles }}" target="_blank">{{noticia.titulo}}</a></h4>
+              <p>{{ noticia.descripcion }} <br><br>
+                <b>{{ noticia.fecha_realizacion }}</b>
+              </p>
+
+            </div>
+          </div>
+                {% endfor %}
+          {% endif %}          
+        </div>
+
+      </div>
+    </section><!-- End News Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+                
+        <div class="section-title">
+          <h2>Eventos</h2>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+          {% if listaEventos %}
+              {% for evento in listaEventos %}
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/'%}{{evento.imagen}}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>{{evento.titulo}}</h4>
+              <p>{{evento.descripcion}}</p>
+              <a href="{% static 'img/'%}{{evento.imagen}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{evento.titulo}}"><i class="bx bx-plus"></i></a>
+              <a href="{{evento.pagina_detalles}}" class="details-link" title="Más detalles" target="_blank"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+              {% endfor %}
+          {% endif %}        
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Our Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Alianzas y socios</h2>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/tepuy.jpg' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/cedesoft.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/gedi.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'img/santa-maria.jpg' %}" class="img-fluid" alt="">
+            </div>
+          </div>                   
+
+        </div>
+
+      </div>
+    </section><!-- End Our Clients Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">            
+            <img id="logo_ufps" class="img-fluid " src="{% static 'assets/img/logo-ufps-blanco.png' %}">
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4 class="link-blanco">Grupo Investigación GIA</h4>
+            <p>
+              Universidad Francisco de Paula Santander <br>
+              San José de Cúcuta, Norte de Santander<br>
+              Colombia <br><br>
+              <strong>Teléfono:</strong> +57 301 6079412<br>
+              <strong>Email:</strong> gia@ufps.edu.co<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4 class="link-blanco">Enlaces de interes</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Proyectos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Investigadores</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Semilleros</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 class="link-blanco">Servicios</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Investigación, desarrollo e innovacion</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo de sistemas inteligentes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Solución a problemas complejos</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Big data</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Transformación digital</a></li>
+            </ul>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>GIA UFPS</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
+          
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %} "></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

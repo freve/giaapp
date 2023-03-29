@@ -1,0 +1,119 @@
+{# Load the tag library #}
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="description" content="Grupo de Investigación en Inteligencia artificial, 
+        Artificial intelligence research team, transformación digital inteligente, digital transforamtion, 
+        Sistemas inteligentes, Intelligent Systems, Software inteligente, Intelligent Software. Big data.">
+    <meta name="author" content="FH Vera-Rivera - GIA UFPS">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/Gia_25.jpg' %}" rel="icon">
+    <link href="{% static 'assets/img/Gia_25.jpg' %}" rel="apple-touch-icon">
+
+     <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    
+    <!--=================== Estilos de Terceros ===================-->
+    
+    <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+    {% block all-css %}
+        <!-- Custom CSS -->
+        
+    {% endblock %}
+
+    <!--=================== Estilos especificos de cada pagina ===================-->
+    {% block specific-css %}
+
+    {% endblock %}
+
+    <!--=================== Titulo ===================-->
+    <title>{% block title %}Grupo GIA ©{% endblock %}</title>
+
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+        <h1 class="logo me-auto"><a href="<% url 'index.html' %"><span>GIA</span> UFPS</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>          
+            <li><a href="{% url 'servicios' %}"><i class="fa-solid fa-handshake"></i> &nbsp; Servicios</a></li>          
+            <li><a href="{% url 'proyectos' %}"><i class="fa-solid fa-diagram-project">&nbsp;</i> Proyectos</a></li>
+            <li><a href="{% url 'team' %}"><i class="fa-solid fa-people-group"></i>&nbsp; Investigadores</a></li>          
+            <li><a href="{% url 'semilleros' %}"><i class="fa-solid fa-hands-holding-child"></i>&nbsp; Semilleros</a></li>
+            <li><a href="{% url 'contacto' %}"><i class="fa-solid fa-map-location-dot"></i>&nbsp; Contacto</a></li>
+            <li><a href="{% url 'about' %}"><i class="fa-solid fa-circle-info"></i>&nbsp; Acerca de GIA</a></li>
+
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+        <div class="header-social-links d-flex">
+            <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+        </div>
+
+        </div>
+    </header><!-- End Header -->
+
+  {# =================== Todo el contenido de la pagina se carga aqui =================== #}
+    <main id="main">
+        {% block content %}
+        {% endblock content%}
+    </main>
+                
+    {# =================== Carga el footer de la pagina =================== #}
+    {% block footer %}
+        {% include 'footer.html' %}
+    {% endblock %}
+        
+    
+<!--=================== Scripts generales de todas las paginas ===================-->
+
+{% block custom-js %}
+     <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %} "></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>    
+            
+{% endblock %}
+
+<!--=================== Scripts especificos de cada pagina ===================-->
+{% block specific-js %}
+{% endblock %}
+
+</body>
+</html>

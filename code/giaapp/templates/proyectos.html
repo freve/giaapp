@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{# Load the tag library #}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Proyectos de GIA</h2>
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>Proyectos</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Sistemas Inteligentes aplicados</li>
+              <li data-filter=".filter-card">Desarrollo de sistemas Inteligentes</li>
+              <li data-filter=".filter-web">Tópicos emergentes</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/transformacion-digital-pymes.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Transformación digital de las Mypimes</h4>
+              <p>Modelo ágil para el diagnóstico y formulación de propuestas de Transformación Digital en las Mypimes de la Ciudad de
+                Cúcuta. <br>
+                <b>Responsable:</b> Eduard Gilberto Puerto Cuadros</p>                
+              <a href="{% static 'img/transformacion-digital-pymes.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Transformación digital Mypimes"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/maestria-td.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Maestría en Transformación digital</h4>
+              <p>Crear una propuesta de Maestría en Transformación digital. <br>
+                <b>Responsable:</b> Milton Jesús Vera Contreras
+              </p>
+              <a href="{% static 'img/maestria-td.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Maestría en Transformación digital"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/microservices-backlog.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Modelo inteligente para identificar Microservicios</h4>
+              <p>Validar y transferir conocimiento del modelo inteligente para identificar y especificar microservicios
+                 a empresas de desarrollo de software.<br>
+                 <b>Responsable:</b> Fredy Humberto Vera Rivera.
+              </p>
+              <a href="{% static 'img/microservices-backlog.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Modelo inteligente para identificar Microservicios"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/deuda-tecnica.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Deuda técnica en proyectos de software de Colombia</h4>
+              <p>Analizar las diferentes estrategias de deuda técnica usadas en proyecto de software en Colombia.<br>
+                <b>Responsable:</b> Boris Rainiero Pérez Gutierrez.
+              </p>
+              <a href="{% static 'img/deuda-tecnica.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Deuda técnica en proyectos de software de Colombia."><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/datos-academicos.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ciencias de datos para la exploración de patrones académicos</h4>
+              <p>Identificar patrones de deserción estudiantil, pérdida materias y repetición usando técnicas de analítica de datos. <br>
+                <b>Responsable:</b> Ana Gissel Gutierrez Buitrago.
+              </p>
+              <a href="{% static 'img/datos-academicos.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ciencias de datos para la exploración de patrones académicos"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="{% static 'img/biometrico.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Sistemas biométricos para ingreso masivo de personal</h4>
+              <p>Caracterizar los Sistemas Biométricos para ingreso masivo de personal. <br>
+              <b>Responsable:</b> Mery Jhanet Sarmiento Saavedra.
+              </p>
+              <a href="{% static 'img/biometrico.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Sistemas biométricos para ingreso masivo de personal"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/ciberseguridad.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Ciberseguridad en los procesos empresariales de las PYMES de software.</h4>
+              <p>Desarrollar una estrategia de ciberseguridad en los procesos empresariales para las PYMES del sector de software 
+                de la ciudad de Cúcuta. <br>
+                <b>Responsable:</b> Carlos Eduardo Pardo Garcia.
+              </p>
+              <a href="{% static 'img/ciberseguridad.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Ciberseguridad en los procesos empresariales de las PYMES"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="{% static 'img/fablab.png' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Articulación FabLab y GIA.</h4>
+              <p>Desarrollar proyectos conjuntos de cooperación entre el FabLab y el grupo GIA.<br>
+                <b>Responsable:</b> Matias Herrera Cáceres.
+              </p>
+              <a href="{% static 'img/fablab.png' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Articulación FabLab y GIA."><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="{% static 'img/repositorio.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Inventario de Tecnologías Abiertas (Open Source & Open Access) para Inteligencia Artificial.</h4>
+              <p>Implementar un repositorio digital sobre TIC emergentes para Inteligencia Artificial que sean Open Source & Open Access. <br>
+                <b>Responsable:</b> Milton Jesús Vera Contreras.
+              </p>
+              <a href="{% static 'img/repositorio.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Inventario de Tecnologías Abiertas"><i class="bx bx-plus"></i></a>
+              <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+{% endblock %}

@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{# Load the tag library #}
+{% load static %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Acerca de GIA</h2>
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>Acerca de GIA</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h2>Grupo de Investigación en Inteligencia Artificial GIA</h2>
+            <h3> Grupo reconocidio por Minciencias clasificado categoría C. <br>
+              <b>Área de conocimiento:</b> Ingeniería y Tecnología. <br>
+              Ciencia, Tecnología e Innovación en Ingeniería.
+            </h3>      
+            <br>      
+            <center>
+            <img src="{% static 'img/cerebro.png' %}" class="img-fluid" alt="">
+            </center>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <p>
+              <b>Vision:</b> GIA se consolidará como un grupo de investigación generador de nuevas herramientas en el campo de la Inteligencia
+              Artificial reconocidas a nivel regional, nacional e internacional las cuales servirán para impulsar el desarrollo tecnológico en la
+              región y así contribuir al mejoramiento de la calidad de vida de sus habitantes.  <br>
+              <br>
+              <b>Objetivos:</b>            
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Diseñar software inteligente que permita cubrir los requerimientos de las empresas e instituciones de la región.</li>
+              <li><i class="ri-check-double-line"></i> Investigar y desarrollar técnicas de inteligencia artificial para el diseño y construcción de sistemas inteligentes en solución de problemas complejos.</li>
+              <li><i class="ri-check-double-line"></i> Formar investigadores en cuanto a la necesidad de contar con personal experto en inteligencia artificial. </li>
+            </ul>
+            
+            <p class="fst-italic">
+
+              La inteligencia artificial es fundamental en los procesos de transformación digital de las organizaciones.
+            <!--   
+              La inteligencia artificial es una herramienta fundamental para la toma de desiciones inteligentes en las organizaciones, 
+              mejorando sus procesos, automatizando tareas, analizando grandes cantidades de datos y obteniendo ventajas competitivas.
+              
+            -->
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+     <!-- ======= Features Section ======= -->
+     <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Líneas de investigación</h2>
+          <p>GIA busca suplir las necesidades de automatización en la región mediante el uso de técnicas que faciliten el control 
+            inteligente en los procesos industriales. Formar Ingenieros de Sistemas que esten en capacidad de diseñar software 
+            inteligente que permita cubrir los requerimientos de las empresas e instituciones de la región.
+            </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="bi bi-cpu" style="color: #ffbb2c;"></i>
+              <h3><a href="">Sistemas inteligentes aplicados</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-robot" style="color: #5578ff;"></i>
+              <h3><a href="">Desarrollo de sistemas inteligentes</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="bi bi-lightbulb" style="color: #e80368;"></i>
+              <h3><a href="">Tópicos emergentes</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-pc-display-horizontal" style="color: #e361ff;"></i>
+              <h3><a href="">Transformación digital</a></h3>
+            </div>
+          </div>          
+
+      </div>
+    </section><!-- End Features Section -->
+
+    
+    <!-- ======= Our Skills Section ======= -->
+   
+    <section id="skills" class="skills">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2><strong>Productos de investigación</strong></h2>
+          <p>La inteligencia artificial es una herramienta fundamental para la toma de desiciones inteligentes en las organizaciones, 
+            mejorando sus procesos, automatizando tareas, analizando grandes cantidades de datos y obteniendo ventajas competitivas. 
+            La producción del grupo GIA se enfoca principalmente en la generación de productos de nuevo conocimiento y de desarrollo 
+            tecnológico e innovación. </p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Generación nuevo conocimiento <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Desarrollo tencológico e innovación <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Apropiación social del conocimiento <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Divulgación pública de ciencia <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Formación de recurso humano - Pregrado <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Formación de recurso humano - Posgrado <i class="val">20%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Skills Section -->
+ 
+    <!-- ======= Our Clients Section ======= -->
+<!--
+    <section id="clients" class="clients">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Clients</h2>
+        </div>
+
+        <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-1.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-2.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-3.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-4.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-5.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-6.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-7.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-6">
+            <div class="client-logo">
+              <img src="{% static 'assets/img/clients/client-8.png' %}" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+  -->
+  <!-- End Our Clients Section -->
+
+  {% endblock %}

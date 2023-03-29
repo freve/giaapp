@@ -1,0 +1,27 @@
+version: "2"
+
+services:
+  db-gia:
+    image: postgres:12.14   
+    env_file: .env_prod    
+    volumes:
+      - db_gia_prod:/var/lib/postgresql/data/pgdata
+
+  apache2-gia:
+    container_name: apache2-giaapp
+    build:
+      context: ./code/giaapp
+      dockerfile: Dockerfile
+      args:
+        - DJANGO_ENV=production 
+    env_file: .env_prod           
+    ports:
+      - '9002:80'
+    volumes: 
+      - ./code:/var/www/html
+    depends_on:
+      - db-gia
+  
+volumes:
+  db_gia_prod:
+    external: true

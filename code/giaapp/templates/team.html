@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{# Load the tag library #}
+{% load static %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Investigadores</h2>
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li>Investigadores</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Our Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2><strong>Investigadores</strong></h2>
+          <p>
+            GIA cuanta con profesionales especialidos en inteligencia artificial, doctores, magisters e ingenieros, 
+            reconocidos por el sistema nacional de ciencia y tecnologia.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/fredy-vera.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Fredy H. Vera Rivera, Ph.D.</h4>
+                <span>Director del grupo GIA</span>
+                <span>Investigador Junior</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/eduard-puerto.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Eduard Gilberto Puerto Cuadros, Ph.D.</h4>
+                <span>Investigador Junior</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Boris Rainiero Pérez Gutiérrez, Ph.D.</h4>
+                <span>Investigador Junior</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-3.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Matias Herrera Cáceres, Ph.D.</h4>
+                <span>Investigador Reconocido</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/carlos-pardo.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Carlos Eduardo Pardo, Ph.D.</h4>
+                <span>Investigador Junior</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/nelson-beltran.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nelson Beltran Galviz, Ph.D. (c)</h4>
+                <span>Investigador reconocido</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Ana Gissele Gutiérrez Buitrago, Ph.D. (c)</h4>
+                <span>Investigadora reconocida</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/milton-vera.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Milton Jesús Vera Contreras, M.Sc.</h4>
+                <span>Investigador reconocido</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/team-4.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i><img src="{% static 'img/scholar.png' %}" class="img-fluid" alt="Google Scholar"></i></a>
+                  <a href=""><img src="{% static 'img/researchgate.png' %}" class="img-fluid" alt="Researchgate"></a>
+                  <a href=""><img src="{% static 'img/orcid.png' %}" class="img-fluid" alt="Orcid"></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mery Yanet Sarmiento Saavedra. </h4>
+                <span>Lider de semillero de investigación SIA</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Our Team Section -->
+
+  {% endblock %}
