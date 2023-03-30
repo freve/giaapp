@@ -27,22 +27,22 @@
         <div class="col-lg-2 col-md-6 footer-links">
           <h4 class="link-blanco">Enlaces de interes</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Servicios</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Proyectos</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Investigadores</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Semilleros</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'servicios' %}">Servicios</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'proyectos' %}">Proyectos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'team' %}">Investigadores</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'semilleros' %}">Semilleros</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
           <h4 class="link-blanco">Servicios</h4>
           <ul>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Investigación, desarrollo e innovacion</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo de sistemas inteligentes</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Solución a problemas complejos</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Big data</a></li>
-            <li><i class="bx bx-chevron-right"></i> <a href="#">Transformación digital</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'servicios' %}">Investigación, desarrollo e innovacion</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'servicios' %}">Desarrollo de sistemas inteligentes</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'servicios' %}">Solución a problemas complejos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'servicios' %}">Big data</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="{% url 'servicios' %}">Transformación digital</a></li>
           </ul>
         </div>          
       </div>
@@ -60,7 +60,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/company-free-html-bootstrap-template/ -->
-        
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
     <div class="social-links text-center text-md-right pt-3 pt-md-0">
