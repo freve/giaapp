@@ -1,7 +1,7 @@
-FROM ubuntu
+FROM httpd:2.4
 
 RUN apt-get update
-RUN apt-get install -y apt-utils vim curl apache2 apache2-utils
+#RUN apt-get install -y apt-utils vim curl apache2 apache2-utils
 RUN apt-get -y install python3 libapache2-mod-wsgi-py3
 RUN ln /usr/bin/python3 /usr/bin/python
 RUN apt-get -y install python3-pip
@@ -14,13 +14,14 @@ EXPOSE 80 3500 81
 ARG DJANGO_ENV
 
 ENV PYTHONUNBUFFERED=1
-ENV WEBAPP_DIR=/var/www/html/giaapp
+#ENV WEBAPP_DIR=/var/www/html/giaapp
+ENV WEBAPP_DIR=/usr/local/apache2/htdocs/giaapp
 
-RUN groupadd varwwwusers
-RUN adduser www-data varwwwusers
-RUN chgrp -R varwwwusers /var/www/
-RUN usermod -a -G varwwwusers root
-RUN chmod -R 770 /var/www/
+#RUN groupadd varwwwusers
+#RUN adduser www-data varwwwusers
+#RUN chgrp -R varwwwusers /var/www/
+#RUN usermod -a -G varwwwusers root
+#RUN chmod -R 770 /var/www/
 
 WORKDIR $WEBAPP_DIR
 
@@ -31,4 +32,4 @@ RUN pip3 install -r $DJANGO_ENV.txt
 
 ADD . $WEBAPP_DIR/
 
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+#CMD ["apache2ctl", "-D", "FOREGROUND"]
