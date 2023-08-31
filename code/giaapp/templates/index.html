@@ -90,7 +90,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.gif' %});  background-size: 100% 100%;">
+        <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/slide-1.png' %});  background-size: 100% 100%;">
           <div class="carousel-container">
             <!--
             <div class="carousel-content animate__animated animate__fadeInUp">
@@ -103,7 +103,7 @@
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.gif' %});  background-size: 100% 100%;">
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.png' %});  background-size: 100% 100%;">
           <div class="carousel-container">
             <!--
               <div class="carousel-content animate__animated animate__fadeInUp">
@@ -194,7 +194,7 @@
                 {% for noticia in listaNoticias %}
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">                            
-              <img src="{% static 'img/'%}{{noticia.imagen}}" class="img-fluid" alt="">
+              <img src="{% static '/assets/img/noticias-eventos/'%}{{noticia.imagen}}" class="img-fluid" alt="">
               <h4><a href="{{ noticia.pagina_detalles }}" target="_blank">{{noticia.titulo}}</a></h4>
               <p>{{ noticia.descripcion }} <br><br>
                 <b>{{ noticia.fecha_realizacion }}</b>
@@ -222,11 +222,11 @@
               {% for evento in listaEventos %}
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="{% static 'img/'%}{{evento.imagen}}" class="img-fluid" alt="">
+            <img src="{% static '/assets/img/noticias-eventos/'%}{{evento.imagen}}" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>{{evento.titulo}}</h4>
               <p>{{evento.descripcion}}</p>
-              <a href="{% static 'img/'%}{{evento.imagen}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{evento.titulo}}"><i class="bx bx-plus"></i></a>
+              <a href="{% static '/assets/img/noticias-eventos/'%}{{evento.imagen}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{evento.titulo}}"><i class="bx bx-plus"></i></a>
               <a href="{{evento.pagina_detalles}}" class="details-link" title="Más detalles" target="_blank"><i class="bx bx-link"></i></a>
             </div>
           </div>

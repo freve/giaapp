@@ -6,8 +6,8 @@ def landing(request):
     return render(request, 'landing.html')
 
 def index(request):
-    listaNoticias = Publicacion.objects.filter(tipoEvento='N')[:6]
-    listaEventos = Publicacion.objects.filter(tipoEvento='E')[:6]
+    listaNoticias = Publicacion.objects.filter(tipoEvento='N').order_by("orden", "-fecha_realizacion")[:6]
+    listaEventos = Publicacion.objects.filter(tipoEvento='E').order_by("orden", "-fecha_realizacion")[:6]
 
     return render(request, 'index.html', {'listaNoticias': listaNoticias, 'listaEventos': listaEventos})
 
