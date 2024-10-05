@@ -15,8 +15,7 @@ services:
       args:
         - DJANGO_ENV=production 
     env_file: .env_prod           
-    command: giaapp/manage.py collectstatic --no-input
-    command: python giaapp/manage.py runserver 0.0.0.0:8000
+    command: giaapp/manage.py collectstatic --no-input | python giaapp/manage.py runserver 0.0.0.0:8000
     ports:
       - '9002:8000'
     volumes: 
